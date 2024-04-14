@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- lineicons Cdn -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <!-- Tailwind Cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Import Font -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2? family=Poppins:ital,wght@0,400;0,800;1,600&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+    <!-- Js -->
+    <script defer src="script.js"></script>
+    <!-- Title -->
+    <title>Simple Sidebar</title>
+  </head>
+  <body
+    class="bg-[url('images/background-image.jpg')] bg-center bg-cover bg-no-repeat overflow-hidden"
+  >
+    <!-- Container -->
+    <div class="flex h-dvh">
+      <!-- Side Bar -->
+      <section
+        id="sidebar"
+        class="max-w-64 min-w-64 py-4 transition-all ease-in-out delay-300 shadow-[3px_0_15px_rgba(255,255,255,0.5)]"
+      >
+        <!-- Wrapper -->
+        <div class="h-dvh">
+          <!-- Logo -->
+          <div class="py-5 px-6">
+            <a class="text-white text-lg font-semibold" href="#">Sidebar</a>
+          </div>
+          <!-- sidebar nav -->
+          <ul class="space-y-2">
+            <!-- sidebar title -->
+            <li class="text-white text-xs px-6 pt-6 pb-1.5">Pages</li>
+            <li class="hover:bg-gray-700 rounded-md transition-all">
+              <a
+                href="#"
+                class="py-2.5 px-7 text-white reletive block text-base"
+              >
+                <i class="lni lni-user pr-2"></i>
+                Profile
+              </a>
+            </li>
+
+            <li class="hover:bg-gray-700 rounded-md transition-all">
+              <a
+                href="#"
+                class="py-2.5 px-7 text-white reletive block text-base"
+              >
+                <i class="lni lni-agenda pr-2"></i>
+                Task
+              </a>
+            </li>
+            <!-- drop down Item -->
+            <li class="group cursor-pointer">
+              <a
+                class="text-center py-2.5 px-7 text-white reletive block text-base space-x-28 has-dropdown hover:bg-gray-700 rounded-md transition-all"
+              >
+                <i class="lni lni-protection pr-2"></i>
+                Auth
+                <i
+                  class="lni lni-chevron-down group-hover:rotate-180 duration-500 transition-all"
+                ></i>
+              </a>
+              <ul
+                class="max-h-0 overflow-hidden opacity-0 transition-all delay-200 ease-linear text-white px-6 group-hover:max-h-full group-hover:opacity-100"
+              >
+                <li class="">
+                  <a
+                    href="#"
+                    class="py-2.5 px-7 text-white reletive block text-base hover:bg-gray-800 rounded-md transition-all"
+                  >
+                    Login
+                  </a>
+                  <a
+                    href="#"
+                    class="py-2.5 px-7 text-white reletive block text-base hover:bg-gray-800 rounded-md transition-all"
+                  >
+                    Register
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="text-white text-xs px-6 pt-6 pb-1.5">
+              Tools & Components
+            </li>
+            <!-- drop down Item -->
+            <li class="group cursor-pointer">
+              <a
+                class="text-center py-2.5 px-7 text-white reletive block text-base space-x-8 has-dropdown hover:bg-gray-700 rounded-md transition-all"
+              >
+                <i class="lni lni-layout pr-2"></i>
+                Form Elements
+                <i
+                  class="lni lni-chevron-down group-hover:rotate-180 duration-500 transition-all"
+                ></i>
+              </a>
+              <ul
+                class="max-h-0 overflow-hidden opacity-0 transition-all delay-200 ease-linear text-white px-6 group-hover:max-h-full group-hover:opacity-100"
+              >
+                <li class="">
+                  <a
+                    href="#"
+                    class="py-2.5 px-7 text-white reletive block text-base hover:bg-gray-800 rounded-md transition-all"
+                  >
+                    Accordion
+                  </a>
+                  <a
+                    href="#"
+                    class="py-2.5 px-7 text-white reletive block text-base hover:bg-gray-800 rounded-md transition-all"
+                  >
+                    Tabs
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="hover:bg-gray-700 rounded-md transition-all">
+              <a
+                href="#"
+                class="py-2.5 px-7 text-white reletive block text-base"
+              >
+                <i class="lni lni-popup pr-2"></i>
+                Notification
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Right Section  -->
+      <section
+        class="flex flex-col min-h-full w-full overflow-hidden transition-all delay-300 ease-in-out py-4"
+      >
+        <figure
+          class="flex flex-nowrap py-4 px-6 border-b border-white border-opacity-25"
+        >
+          <!-- Toggle Btn -->
+          <button
+            class="toggle-btn bg-transparent cursor-pointer border-0 mr-6"
+            type="button"
+          >
+            <i class="lni lni-grid-alt text-white text-2xl"></i>
+          </button>
+        </figure>
+      </section>
+    </div>
+  </body>
+</html>
